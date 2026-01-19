@@ -3,6 +3,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QFontDialog>
 #include "./ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -79,3 +80,12 @@ void MainWindow::on_actionAbout_triggered(){
 void MainWindow::on_actionClose_triggered(){
     close();
 }
+
+void MainWindow::on_actionFont_triggered(){
+    bool ok;
+    QFont font = QFontDialog::getFont(&ok,this);
+    if(!ok)
+        return;
+    ui->plainTextEdit->setFont(font);
+}
+
