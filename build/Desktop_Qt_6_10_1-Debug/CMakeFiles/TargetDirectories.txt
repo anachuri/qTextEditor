@@ -1,0 +1,9 @@
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/qTextEditor.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/edit_cache.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/rebuild_cache.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/list_install_components.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/install.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/install/local.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/install/strip.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/qTextEditor_autogen_timestamp_deps.dir
+/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/qTextEditor_autogen.dir

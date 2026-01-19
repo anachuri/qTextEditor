@@ -1,0 +1,30 @@
+{
+	"BUILD_DIR" : "/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/qTextEditor_autogen",
+	"CMAKE_BINARY_DIR" : "/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/imaxii/Documents/qt-workspace/qTextEditor",
+	"CMAKE_SOURCE_DIR" : "/home/imaxii/Documents/qt-workspace/qTextEditor",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/qTextEditor_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/imaxii/Documents/qt-workspace/qTextEditor/save.png",
+		"/home/imaxii/Documents/qt-workspace/qTextEditor/open.png",
+		"/home/imaxii/Documents/qt-workspace/qTextEditor/copy.png",
+		"/home/imaxii/Documents/qt-workspace/qTextEditor/close.png",
+		"/home/imaxii/Documents/qt-workspace/qTextEditor/paste.png",
+		"/home/imaxii/Documents/qt-workspace/qTextEditor/cut.png"
+	],
+	"LOCK_FILE" : "/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/qTextEditor_autogen.dir/AutoRcc_icons_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "icons" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_icons.cpp",
+	"RCC_EXECUTABLE" : "/home/imaxii/Qt/6.10.1/gcc_64/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/qTextEditor_autogen.dir/AutoRcc_icons_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/imaxii/Documents/qt-workspace/qTextEditor/icons.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

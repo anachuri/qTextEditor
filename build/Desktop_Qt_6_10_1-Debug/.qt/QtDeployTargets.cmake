@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_qTextEditor_FILE /home/imaxii/Documents/qt-workspace/qTextEditor/build/Desktop_Qt_6_10_1-Debug/qTextEditor)
+set(__QT_DEPLOY_TARGET_qTextEditor_TYPE EXECUTABLE)
