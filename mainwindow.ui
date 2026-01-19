@@ -34,6 +34,7 @@
      <string>file</string>
     </property>
     <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
     <addaction name="actionSaveAs"/>
     <addaction name="actionClose"/>
    </widget>
@@ -67,6 +68,7 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
    <addaction name="actionSaveAs"/>
    <addaction name="separator"/>
    <addaction name="actionCopy"/>
@@ -90,7 +92,7 @@
   <action name="actionSaveAs">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/save.png</normaloff>:/save.png</iconset>
+     <normaloff>:/save_as.png</normaloff>:/save_as.png</iconset>
    </property>
    <property name="text">
     <string>save as</string>
@@ -150,6 +152,15 @@
   <action name="actionAbout">
    <property name="text">
     <string>about</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/save.png</normaloff>:/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
    </property>
   </action>
  </widget>
