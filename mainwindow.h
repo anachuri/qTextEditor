@@ -25,8 +25,9 @@ private slots:
     void on_actionAbout_triggered();
     void on_actionClose_triggered();
     void on_actionSave_triggered();
-
-    void on_actionFont_triggered();
+    void on_actionType_triggered();
+    void on_actionColor_triggered();
+    void on_actionBackgroundColor_triggered();
 
 private:
     Ui::MainWindow *ui;

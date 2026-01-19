@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+     <widget class="QTextEdit" name="textEdit"/>
     </item>
    </layout>
   </widget>
@@ -42,10 +42,24 @@
     <property name="title">
      <string>edit</string>
     </property>
+    <widget class="QMenu" name="menufont">
+     <property name="title">
+      <string>font</string>
+     </property>
+     <addaction name="actionType"/>
+     <addaction name="actionColor"/>
+    </widget>
+    <widget class="QMenu" name="menubackground">
+     <property name="title">
+      <string>background</string>
+     </property>
+     <addaction name="actionBackgroundColor"/>
+    </widget>
     <addaction name="actionCopy"/>
     <addaction name="actionCut"/>
     <addaction name="actionPaste"/>
-    <addaction name="actionFont"/>
+    <addaction name="menufont"/>
+    <addaction name="menubackground"/>
    </widget>
    <widget class="QMenu" name="menuhelp">
     <property name="title">
@@ -164,9 +178,19 @@
     <string>save</string>
    </property>
   </action>
-  <action name="actionFont">
+  <action name="actionType">
    <property name="text">
-    <string>font</string>
+    <string>type</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>color</string>
+   </property>
+  </action>
+  <action name="actionBackgroundColor">
+   <property name="text">
+    <string>color</string>
    </property>
   </action>
  </widget>

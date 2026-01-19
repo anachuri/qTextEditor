@@ -4,13 +4,14 @@
 #include <QMessageBox>
 #include <QTextStream>
 #include <QFontDialog>
+#include <QColorDialog>
 #include "./ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    setCentralWidget(ui->plainTextEdit);
+    setCentralWidget(ui->textEdit);
 }
 
 MainWindow::~MainWindow() {
@@ -27,7 +28,7 @@ void MainWindow::on_actionOpen_triggered(){
         return;
     }
     QTextStream in(&file);
-    ui->plainTextEdit->setPlainText(in.readAll());
+    ui->textEdit->setPlainText(in.readAll());
     file.close();
 }
 
@@ -42,7 +43,7 @@ void MainWindow::on_actionSave_triggered() {
         return;
     }
     QTextStream io(&file);
-    io << ui->plainTextEdit->toPlainText();
+    io << ui->textEdit->toPlainText();
     file.flush();
     file.close();
 }
@@ -56,21 +57,21 @@ void MainWindow::on_actionSaveAs_triggered(){
         return;
     }
     QTextStream io(&file);
-    io << ui->plainTextEdit->toPlainText();
+    io << ui->textEdit->toPlainText();
     file.flush();
     file.close();
 }
 
 void MainWindow::on_actionCopy_triggered(){
-    ui->plainTextEdit->copy();
+    ui->textEdit->copy();
 }
 
 void MainWindow::on_actionCut_triggered(){
-    ui->plainTextEdit->cut();
+    ui->textEdit->cut();
 }
 
 void MainWindow::on_actionPaste_triggered(){
-    ui->plainTextEdit->paste();
+    ui->textEdit->paste();
 }
 
 void MainWindow::on_actionAbout_triggered(){
@@ -81,11 +82,20 @@ void MainWindow::on_actionClose_triggered(){
     close();
 }
 
-void MainWindow::on_actionFont_triggered(){
+void MainWindow::on_actionType_triggered(){
     bool ok;
     QFont font = QFontDialog::getFont(&ok,this);
     if(!ok)
         return;
-    ui->plainTextEdit->setFont(font);
+    ui->textEdit->setFont(font);
+}
+
+void MainWindow::on_actionColor_triggered(){
+    ui->textEdit->setTextColor(QColorDialog::getColor(Qt::white,this));
+}
+
+
+void MainWindow::on_actionBackgroundColor_triggered(){
+    ui->textEdit->setPalette(QPalette(QColorDialog::getColor(Qt::white,this)));
 }
 
