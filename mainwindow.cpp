@@ -5,6 +5,9 @@
 #include <QTextStream>
 #include <QFontDialog>
 #include <QColorDialog>
+#include <QPrintDialog>
+#include <QPrinter>
+#include <QPainter>
 #include "./ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -87,7 +90,8 @@ void MainWindow::on_actionType_triggered(){
     QFont font = QFontDialog::getFont(&ok,this);
     if(!ok)
         return;
-    ui->textEdit->setFont(font);
+    ui->textEdit->setFontPointSize(font.pointSizeF());
+    ui->textEdit->setFontFamily(font.family());
 }
 
 void MainWindow::on_actionColor_triggered(){
@@ -97,5 +101,15 @@ void MainWindow::on_actionColor_triggered(){
 
 void MainWindow::on_actionBackgroundColor_triggered(){
     ui->textEdit->setPalette(QPalette(QColorDialog::getColor(Qt::white,this)));
+}
+
+
+void MainWindow::on_actionPrint_triggered(){
+    QPrinter* printer;
+    QPrintDialog pd(this);
+    if(pd.exec() == QDialog::Rejected)
+        return;
+    printer = pd.printer();
+    ui->textEdit->print(printer);
 }
 

@@ -36,6 +36,8 @@
     <addaction name="actionOpen"/>
     <addaction name="actionSave"/>
     <addaction name="actionSaveAs"/>
+    <addaction name="actionPrint"/>
+    <addaction name="separator"/>
     <addaction name="actionClose"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -191,6 +193,11 @@
   <action name="actionBackgroundColor">
    <property name="text">
     <string>color</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>print</string>
    </property>
   </action>
  </widget>
